@@ -378,7 +378,7 @@ class SpaceScreen(private val host: MainActivity, private val session: Session) 
         setPadding(0, d(48f), 0, 0)
     }
 
-    private fun lp(top: Int) = LinearLayout.LayoutParams(MATCH, WRAP).apply { topMargin = d(top.toFloat()) }
+    private fun lp(top: Int = 0) = LinearLayout.LayoutParams(MATCH, WRAP).apply { topMargin = d(top.toFloat()) }
 
     private fun size(bytes: Long): String = when {
         bytes < 1024 -> "$bytes Б"
